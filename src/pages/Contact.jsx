@@ -1,7 +1,8 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export const Contact = () => {
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     useEffect(() => {
         const observerOptions = {
@@ -162,12 +163,47 @@ export const Contact = () => {
                     </a>
                 </div>
                 {/* Mobile menu button */}
-                <button className="sm:hidden p-2 text-gray-400 hover:text-gray-200">
+                <button 
+                    className="sm:hidden p-2 text-gray-400 hover:text-gray-200"
+                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                >
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                 </button>
             </nav>
+
+            {/* Mobile Sidebar */}
+            {isMobileMenuOpen && (
+                <div className="sm:hidden fixed inset-0 z-50">
+                    <div className="absolute inset-0 bg-black/50" onClick={() => setIsMobileMenuOpen(false)}></div>
+                    <div className="absolute right-0 top-0 h-full w-64 bg-gray-900/95 backdrop-blur-sm border-l border-white/10 transform transition-transform duration-300">
+                        <div className="p-6 space-y-6">
+                            <Link 
+                                to="/" 
+                                className="block text-gray-300 hover:text-white transition-colors duration-300 py-3 text-lg"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                                Home
+                            </Link>
+                            <Link 
+                                to="/about" 
+                                className="block text-gray-300 hover:text-white transition-colors duration-300 py-3 text-lg"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                                About
+                            </Link>
+                            <a 
+                                href="#projects" 
+                                className="block text-gray-300 hover:text-white transition-colors duration-300 py-3 text-lg"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                                Projects
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            )}
 
             <div className="relative z-10 flex items-center justify-center min-h-[calc(100vh-160px)] px-4 py-8">
                 <div className="max-w-6xl mx-auto w-full">
