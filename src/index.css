@@ -1,6 +1,5 @@
-/* Story Portfolio — Global Reset
-   All styling is handled inside StoryPortfolio.jsx
-   This file only provides the minimal body reset */
+/* Cricket Stadium Portfolio — Global Reset & Tailwind */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 *, *::before, *::after {
   margin: 0;
@@ -10,6 +9,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
@@ -17,4 +17,8 @@ body {
   min-width: 320px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #050d0a;
+  color: #f5f5dc;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  overflow-x: hidden;
 }

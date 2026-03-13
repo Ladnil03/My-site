@@ -1,8 +1,8 @@
 import React from 'react'
-import StoryPortfolio from './pages/StoryPortfolio'
+import CricketPortfolio from './components/cricket/CricketPortfolio'
 
 function App() {
-  return <StoryPortfolio />
+  return <CricketPortfolio />
 }
 
 export default App
