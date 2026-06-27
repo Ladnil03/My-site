@@ -167,10 +167,10 @@ export const About = () => {
                         <span className="relative z-10">Home</span>
                         <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-gray-400 to-stone-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                     </Link>
-                    <a href="#projects" className="relative group text-gray-400 hover:text-gray-200 transition-all duration-300 text-sm lg:text-base">
+                    <Link to="/projects" className="relative group text-gray-400 hover:text-gray-200 transition-all duration-300 text-sm lg:text-base">
                         <span className="relative z-10">Projects</span>
                         <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-stone-400 to-zinc-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-                    </a>
+                    </Link>
                     <Link to="/contact" className="relative group text-gray-400 hover:text-gray-200 transition-all duration-300 text-sm lg:text-base">
                         <span className="relative z-10">Contact</span>
                         <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-zinc-400 to-gray-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
@@ -200,13 +200,13 @@ export const About = () => {
                             >
                                 Home
                             </Link>
-                            <a 
-                                href="#projects" 
+                            <Link 
+                                to="/projects" 
                                 className="block text-gray-300 hover:text-white transition-colors duration-300 py-3 text-lg"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 Projects
-                            </a>
+                            </Link>
                             <Link 
                                 to="/contact" 
                                 className="block text-gray-300 hover:text-white transition-colors duration-300 py-3 text-lg"

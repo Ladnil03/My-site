@@ -22,3 +22,24 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Personal photos & sports images
+src/assets/nil.jpg
+src/assets/childhood.jpg
+src/assets/mom.jpg
+src/assets/momdada.jpg
+src/assets/ladfamily.jpg
+src/assets/m.jpg
+src/assets/msm.jpg
+src/assets/Mahirat.jpeg
+src/assets/RCB .jpeg
+src/assets/ROHIRAT.jpeg
+src/assets/t20wc.jpeg
+src/assets/bridge.jpg
+src/assets/river.jpg
+src/assets/mountain.jpg
+src/assets/night.jpg
+
+# Generated/temporary video assets
+src/assets/gemini_generated_video_*.mp4
+

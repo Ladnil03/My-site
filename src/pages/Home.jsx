@@ -71,10 +71,10 @@ export const Home = () => {
                         <span className="relative z-10">About</span>
                         <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-gray-400 to-stone-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                     </Link>
-                    <a href="#projects" className="relative group text-gray-400 hover:text-gray-200 transition-all duration-300 text-sm lg:text-base">
+                    <Link to="/projects" className="relative group text-gray-400 hover:text-gray-200 transition-all duration-300 text-sm lg:text-base">
                         <span className="relative z-10">Projects</span>
                         <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-stone-400 to-zinc-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-                    </a>
+                    </Link>
                     <Link to="/contact" className="relative group text-gray-400 hover:text-gray-200 transition-all duration-300 text-sm lg:text-base">
                         <span className="relative z-10">Contact</span>
                         <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-zinc-400 to-gray-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
@@ -104,13 +104,13 @@ export const Home = () => {
                             >
                                 About
                             </Link>
-                            <a 
-                                href="#projects" 
+                            <Link 
+                                to="/projects" 
                                 className="block text-gray-300 hover:text-white transition-colors duration-300 py-3 text-lg"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 Projects
-                            </a>
+                            </Link>
                             <Link 
                                 to="/contact" 
                                 className="block text-gray-300 hover:text-white transition-colors duration-300 py-3 text-lg"
@@ -188,9 +188,9 @@ export const Home = () => {
                     
                     {/* Buttons */}
                     <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mb-6">
-                        <a href="#projects" className="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-gray-700 to-stone-700 rounded-full font-semibold text-gray-100 shadow-lg hover:shadow-stone-700/50 transform hover:scale-105 transition-all duration-300 text-sm sm:text-base">
+                        <Link to="/projects" className="px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-gray-700 to-stone-700 rounded-full font-semibold text-gray-100 shadow-lg hover:shadow-stone-700/50 transform hover:scale-105 transition-all duration-300 text-sm sm:text-base">
                             View My Work
-                        </a>
+                        </Link>
                         
                         <Link to="/contact" className="group relative px-6 sm:px-8 py-3 sm:py-4 border-2 border-transparent bg-gradient-to-r from-zinc-700 to-gray-700 rounded-full font-semibold text-gray-100 hover:shadow-zinc-700/50 transform hover:scale-105 transition-all duration-300 text-sm sm:text-base">
                             <span className="absolute inset-0 bg-gradient-to-r from-black to-gray-900 m-0.5 rounded-full"></span>
